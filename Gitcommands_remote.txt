@@ -1,0 +1,97 @@
+-----------------------------------------------------------
+
+PUSH
+
+git remote add origin git@github.com:ZhenLiu666/learngit.git
+git push -u origin master
+git push origin master
+
+git remote -v
+git remote rm origin 
+
+
+---------------------------------------------------------------
+
+
+PULL
+
+git clone git@github.com:ZhenLiu6662/gitskills.git
+cd gitskills
+ls 
+
+git clone https://github.com/ZhenLiu666/gitskills.git
+
+git branch --set-upstream-to=origin/dev dev
+git pull
+
+
+-----------------------------------------------------------------
+
+BRANCH
+
+git branch dev 
+git checkout dev
+git checkout -b dev
+git branch 
+git checkout master
+git merge dev //用于合并指定分支到当前分支
+git merge --no-ff -m "merge with no-ff" dev
+git  branch -d dev
+git switch -c dev
+git switch master
+
+git stash  //将工作现场隐藏
+git stash list
+git stash drop
+git stash pop
+git stash apply stash@{0}
+
+---------------------------------------------------------------------
+
+TAGS
+
+git branch 
+git checkout master
+git tag v1.0
+git tag
+git tag v0.9 f52c633
+git show v0.9
+git tag -a v0.1 -m "version 0.1 relased" 1094adb
+git tag -d v0.1
+
+git push origin v0.1
+git push origin --tags
+git tag -d v0.1
+git push origin :refs/tags/v0.9
+
+
+--------------------------------------------------------------------------
+
+RENAME
+
+git config --global alias.st status
+git config --global alias.unstage 'reset HEAD'
+cat .git/config
+cat .gitconfig
+
+---------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
