@@ -1,3 +1,39 @@
 This is a test files for 2021/03/13.
-I want to learn something new.
-Github.
+I want to give some examples about how to use the GIT usual.
+
+-------------------------------------------------------------------------
+-------------------------------------------------------------------------
+
+mkdir learngit
+cd learngit 
+pwd 
+
+git init 
+ls -ah
+
+git add text.txt
+cat text.txt
+vim text.txt
+git commit -m "add a new file"
+
+git status
+git log --pretty=oneline
+git reflog
+git diff text.txt
+git diff HEAD --readme.txt
+
+
+git reset --hard HEAD^ //  HEAD~100
+git reset --hard 1094a
+git reset HEAD text.txt
+
+git checkout --file
+git reset HEAD <file>  >>>  git checkout --file 
+
+rm text.txt
+git status
+git rm text.txt
+
+
+
+
