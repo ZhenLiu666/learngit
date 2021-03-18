@@ -1,0 +1,24 @@
+=========================================================
+Anaconda Prompt       终端，使用命令行界面来管理环境和包
+Anaconda Navigator   GUI，使用鼠标来管理和运行环境和包
+=========================================================
+
+conda upgrade numpy                    //更新
+conda upgrade --all
+
+conda install numpy                        //安装
+conda install numpy=1.10
+conda remove numpy                     //删除
+
+conda create -n env_name             //创建环境
+conda env list                                //显示环境包含内容
+
+source activate env_name              //切换环境
+conda list                                 
+source deactive                               // windows下不需要加source
+
+conda env export           ---->   environment.yaml 
+conda env creat -f  environment.yaml
+
+
+
